@@ -1,5 +1,6 @@
 # Curso FullStack JavaScript
 
+![javascript-illustration](https://user-images.githubusercontent.com/64049906/104070331-00ebae80-51dd-11eb-8962-801f56d7e2f5.png)
 
 **JavaScript** é a linguagem de script do lado do cliente mais popular e amplamente usada. Os scripts do lado do cliente referem-se aos scripts executados no navegador da **_WEB_**. O **JavaScript** é projetado para adicionar interatividade e efeitos dinâmicos às páginas da **_WEB_**, manipulando o conteúdo retornado de um servidor da **_WEB_**. 
 

@@ -4,6 +4,8 @@ $ git --version    // Verificando se o Git esta instalado
 
 $ git init   // Iniciando um repositório Git
 
+$ git config --list // Verifica os valores padrões do usuário no github
+
 $ git status   // Verificando o status dos arquivos
 
 $ git add -A  // Adicionando arquivos

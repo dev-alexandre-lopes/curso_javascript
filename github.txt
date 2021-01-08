@@ -19,3 +19,5 @@ $ git remote add origin https://github.com/dev-alexandre-lopes/curso_javascript.
 $ git remote -v  // Verificando se o repositório remoto foi reconhecido
 
 $ git push -u origin master  // Enviando o branch master local para o repositório remoto
+
+$ git fetch // Atualizar o repositório local

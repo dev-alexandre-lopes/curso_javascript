@@ -8,7 +8,7 @@ Foi originalmente desenvolvido como **LiveScript** pela **_Netscape_** em meados
 
 Agora, o **JavaScript** é a linguagem de script do lado do cliente padrão para aplicativos baseados na **_WEB_** e é compatível com praticamente todos os navegadores disponíveis hoje, como o **Google Chrome, Mozilla Firefox, Apple Safari, etc.**
 
-**JavaScript** é um lingugem orientada a objetos e também possui algumas semelhanças na sintaxe com a linguagem de programação Java. Mas o **JavaScript** não está relacionado ao Java de forma alguma. 
+**JavaScript** é uma linguagem orientada a objetos e também possui algumas semelhanças na sintaxe com a linguagem de programação Java. Mas o **JavaScript** não está relacionado ao Java de forma alguma. 
 
 **JavaScript** é oficialmente mantido pela **_ECMA (European Computer Manufacturers Association)_** como **_ECMAScript_**. **_ECMAScript 6_** (ou ES6) é a versão principal mais recente do padrão **_ECMAScript_**.
 

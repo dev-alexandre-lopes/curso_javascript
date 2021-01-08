@@ -1,0 +1,19 @@
+//Comandos Git:
+
+$ git --version    // Verificando se o Git esta instalado
+
+$ git init   // Iniciando um repositório Git
+
+$ git status   // Verificando o status dos arquivos
+
+$ git add -A  // Adicionando arquivos
+
+$ git commit -m "Primeiro Commit"   // Fazendo um Commit
+
+$ git log  // Verificando se foi feito o commit e o hash
+
+$ git remote add origin https://github.com/dev-alexandre-lopes/curso_javascript.git  // Adicionando repositório remoto
+
+$ git remote -v  // Verificando se o repositório remoto foi reconhecido
+
+$ git push -u origin master  // Enviando o branch master local para o repositório remoto

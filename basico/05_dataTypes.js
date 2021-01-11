@@ -56,3 +56,9 @@ console.log (typeof apelidoNome)
 console.log (typeof num)
 
 console.log (typeof aprovado)
+
+console.log (16 / 0);  // Output: Infinity
+
+console.log (-16 / 0); // Output: -Infinity
+
+console.log (16 / -0); // Output: -Infinity

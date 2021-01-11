@@ -1,4 +1,4 @@
-# Curso FullStack JavaScript
+# Curso JavaScript
 
 ![javascript-illustration](https://user-images.githubusercontent.com/64049906/104070331-00ebae80-51dd-11eb-8962-801f56d7e2f5.png)
 

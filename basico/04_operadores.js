@@ -24,6 +24,61 @@ variáveis ​​ou valores e assim por diante.
     Precedência: (), **, * / %, + - 
 */
 
+
+let VarA = 25;
+let VarB = 5;
+let soma = VarA + VarB;
+let sub = VarA - VarB;
+let mul = VarA * VarB;
+let div = VarA / VarB;
+let pot = VarA ** VarB;
+let rest = VarA % 2;
+let conta = (VarA*VarB)/(VarA-VarB) + 1// Observar a ordem de prioridade
+
+// Exibindo os resultados:
+console.log(soma);
+console.log(sub);
+console.log(mul);
+console.log(div);
+console.log(mul);
+console.log(pot);
+console.log(rest);
+console.log(conta);
+
+/* Operadores de Atribuição: 
+
+    =	Atribui	
+    +=	Soma e Atribui 
+    -=	Subtrai e Atribui
+    *=	Multiplica e Atribui
+    /=	Divide e Atribui o quociente
+    %=	Divide e Atribui o módulo
+*/
+
+let VarC = 12;
+let VarD = 6;
+VarC += 20;
+console.log(VarC);
+VarD -= 3;
+console.log(VarD);
+VarC *= 2;
+console.log(VarC);
+VarD /= 2;
+console.log(VarD);
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 let contador = 1;
 contador++; // Operador de Incremento, utilizado sempre com let
 contador++;
@@ -37,3 +92,4 @@ console.log(contador);
 
 //parseInt('5') -> Transforma string em número
 //parserFloat('4.56')
+*/

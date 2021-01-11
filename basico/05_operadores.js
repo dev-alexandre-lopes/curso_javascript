@@ -68,30 +68,96 @@ console.log(VarD);
 VarC %= 2;
 console.log(VarC);
 
+/* Operadores de String:
+
++	Concatenação
++=	Concatenação com atribuição
+
+*/
+let str1 = "Olá";
+let str2 = " Mundo!";
+ 
+console.log (str1 + str2); 
+ 
+str1 += str2;
+console.log (str1); 
 
 
+/* Operadores de Incremento e Decremento:
+
+++x	    Pre-incrementa
+x++	    Post-incrementa
+--x	    Pre-decrementa
+x--	    Post-decrementa
+
+*/
+
+let x; // Declaring Variable
+ 
+x = 10;
+console.log (++x); // Outputs: 11
+console.log (x);   // Outputs: 11
+ 
+x = 10;
+console.log (x++); // Outputs: 10
+console.log (x);   // Outputs: 11
+ 
+x = 10;
+console.log (--x); // Outputs: 9
+console.log (x);   // Outputs: 9
+ 
+x = 10;
+console.log (x--); // Outputs: 10
+console.log (x);   // Outputs: 9
 
 
+/* Operadores Lógicos:
 
-
-
-
-
-
-
+   &&	Operação lógica - And
+   ||	Operação lógica - Or
+   !	Operação lógica - Not
+*/
 
 /*
-let contador = 1;
-contador++; // Operador de Incremento, utilizado sempre com let
-contador++;
-contador++;
-passo = 3
-console.log(contador + passo);
-console.log(--contador);
-
-contador += passo;
-console.log(contador);
-
-//parseInt('5') -> Transforma string em número
-//parserFloat('4.56')
+Chama-se ano bissexto o ano ao qual é acrescentado um dia extra, ficando com 366 dias, 
+um dia a mais do que os anos normais de 365 dias, ocorrendo a cada quatro anos.
 */
+
+// Cálculo de um ano bissexto:
+
+let ano = 2020;
+ 
+// Anos Bissextos são divisiveis por 400 ou por 4 mão não por 100
+if((ano % 400 == 0) || ((ano % 100 != 0) && (ano % 4 == 0))){
+    console.log (`${ano} é um ano bissexto.`);
+} else{
+    console.log (`${ano} não é um ano bissexto.`);
+}
+
+/* Operadores de Comparação:
+
+    ==	Igual
+    ===	Identico
+    !=	Não igual ou diferente
+    !==	Não identico
+    <	Menor que
+    >	Maior que
+    >=	Maior ou igual
+    <=	Menor ou igual
+*/
+
+let p = 25;
+let y = 35;
+let z = "25";
+ 
+console.log (p == z);  // Outputs: true
+console.log (p === z); // Outputs: false
+console.log (p != y);  // Outputs: true
+console.log (p !== z); // Outputs: true
+console.log (p < y);   // Outputs: true
+console.log (p > y);   // Outputs: false
+console.log (p <= y);  // Outputs: true
+console.log (p >= y);  // Outputs: false
+
+
+

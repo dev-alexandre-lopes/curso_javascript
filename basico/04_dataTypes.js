@@ -42,7 +42,7 @@ console.log (16 / -0); // Output: -Infinity
 
 
 /*
-Enquanto NaN representa um valor especial Não-um-número. 
+Enquanto NaN representa um valor especial Not-a-Number (NaN). 
 É o resultado de uma operação matemática inválida ou indefinida, como tirar a raiz quadrada 
 de -1 ou dividir 0 por 0, etc.
 */

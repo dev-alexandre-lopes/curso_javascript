@@ -14,13 +14,14 @@ Agora, o **JavaScript** é a linguagem de script do lado do cliente padrão para
 
 ## Boas Referências e a Documentação Oficial:
 
-[Website](http://www.ecma-international.org/ecma-262/6.0/#sec-web-scripting) - Website ECMAScript® 2015 Language Specification
+[Website](https://www.ecma-international.org/publications/standards/Ecma-262.htm) - Website ECMAScript® 2015 Language Specification.
+
+[Repositório](https://github.com/tc39/ecma262) - Repositório Oficial da ECMA-262.
 
 [Website](https://www.w3schools.com/js/default.asp) - Website W3Schools
 
 ## Conteúdo do Curso
 
-* Introdução;
 * Conceitos Fundamentais Básicos;
 * Lógica de Programação;
 * Funções;

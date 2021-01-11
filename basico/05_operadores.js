@@ -65,6 +65,8 @@ VarC *= 2;
 console.log(VarC);
 VarD /= 2;
 console.log(VarD);
+VarC %= 2;
+console.log(VarC);
 
 
 

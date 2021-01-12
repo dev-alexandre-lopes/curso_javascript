@@ -20,6 +20,7 @@ Propriedade e Métodos:
 
 length       - Retorna o tamanho de uma string;
 charAt()     - Retorna o caractere no índice especificado.
+charCodeAt() - Retorno o caractere unicode da string.
 indexOf()    - Retorna o índice ou posição da (primeira) ocorrência de uma "string" especificada dentro de uma string.
 lastIndexOf()- Retorna o índice ou posição da (última) ocorrência da string especificada dentro de uma string.
 search()     - Pesquisa um determinado pedaço de texto ou padrão dentro de uma string.
@@ -29,6 +30,10 @@ substr ()    - Método para extrair semelhante ao slice () com uma diferença su
                o número de caracteres a serem extraídos em vez do índice final.
 replace()    - Método para substituir parte de uma string por outra string.
 toUpperCase()- Método para converter uma string em maiúsculas.
+toLowerCase()- Método para converter uma string em minúsculas.
+split()      - Método que pode ser usado para dividir uma string em um array de strings.
+padStart()   - Método que oferece suporte ao preenchimento no início de uma string. 
+padEnd()     - Método que oferece suporte ao preenchimento no final de uma string. 
 */ 
 
 // Criando uma String
@@ -51,10 +56,13 @@ console.log(texto[6]);
 
 console.log(texto.charAt(1));
 
+// Método charCodeAt() retorna o caractere unicode da string.
+
+console.log(texto.charCodeAt(1));
+
 // Método indexOf retorna a posição da primeira ocorrência de uma string
 
 let pos = texto.indexOf('texto'); 
-
 console.log (pos);
 
 //Exemplo de lastIndexOf
@@ -64,7 +72,6 @@ let text2 = ("Dia de sol quente no mês de janeiro. Todos os dias de sol são bo
 // Método lastIndexOf retorna a posição da ultima ocorrência de um string
 
 let pos1 = text2.lastIndexOf('sol');
-
 console.log (pos1);
 
 //Forma de concatenar texto usando: Template Strings 
@@ -74,38 +81,63 @@ console.log (`${texto} em um lindo sábado`);
 // Pesquisando pou um padrão dentro da string com search(). Não suporta expressões regulares.
 
 let str = "Color red looks brighter than color blue.";
-
 let pos2 = str.search('color');
-
 console.log(pos2);
 
 //Extraindo uma substring de uma string -> .slice(startIndex, endIndex).
 
 let email = 'Esse é meu e-mail:joao@gmail.com';
-
 let valorEmail = email.slice(18,32);
-
 console.log(valorEmail);
 
 // Extração de um número fixo de caracteres de uma string -> .substring(startIndex, endIndex)
 
 let pos3 = email.substring(4,10);
-
 console.log (pos3);
 
 // Extração de um número fixo de caracteres de uma string -> .substr (startIndex, length)
 
 let pos4 = email.substr(7, 25);
-
 console.log (pos4);
 
 //Substituindo o conteúdo de uma string com replace() -> .replace(regexp|substr, newSubstr)
 
 let novoEmail= email.replace('joao@gmail.com', 'joaopaulo@hotmail.com');
-
 console.log(novoEmail);
 
+// Convertendo uma string para maiusculas com toUpperCase():
 
+let word = 'maiuscula';
+let WORD = word.toUpperCase();
+console.log (WORD)
 
+// Convertendo uma string para maiusculas com toLowerCase():
 
+let resultado = WORD.toLowerCase();
+console.log (resultado);
+
+// Dividindo uma string em um array com split -> .split(separator, limit)
+
+let strFruta = 'Maça, Banana, Laranja, Mamão, Abacaxi, Goiaba'
+let arrFruta = strFruta.split(",");
+console.log(arrFruta);
+console.log(arrFruta[0]);
+console.log(arrFruta[1]);
+console.log(arrFruta[2]);
+console.log(arrFruta[3]);
+
+let arrWord =word.split("");
+console.log(arrWord);
+console.log(arrWord[0]);
+console.log(arrWord[1]);
+console.log(arrWord[2]);
+console.log(arrWord[3]);
+
+//Preenchimento no início de uma string com padStart:
+
+let num = '5';
+num1 = num.padStart(4,0);
+console.log(num1);
+num2 = num.padEnd(4,0);
+console.log(num2);
 

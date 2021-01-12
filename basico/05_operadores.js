@@ -11,7 +11,7 @@ variáveis ​​ou valores e assim por diante.
 
 */
 
-// Tipos de Operadores: Aritméticos, Atribuição, String,  Incremento e Decremento, Lógicos e Comparação
+// Tipos de Operadores: Aritméticos, Atribuição, String, Incremento e Decremento, Lógicos e Comparação
 
 /* Operadores Aritméticos: 
 

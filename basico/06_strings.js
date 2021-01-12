@@ -81,7 +81,8 @@ console.log (`${texto} em um lindo sábado`);
 // Pesquisando pou um padrão dentro da string com search(). Não suporta expressões regulares.
 
 let str = "Color red looks brighter than color blue.";
-let pos2 = str.search('color');
+console.log(str);
+let pos2 = str.search("color");
 console.log(pos2);
 
 //Extraindo uma substring de uma string -> .slice(startIndex, endIndex).
@@ -107,7 +108,7 @@ console.log(novoEmail);
 
 // Convertendo uma string para maiusculas com toUpperCase():
 
-let word = 'maiuscula';
+let word = 'maiuscula e minuscula';
 let WORD = word.toUpperCase();
 console.log (WORD)
 
@@ -126,7 +127,7 @@ console.log(arrFruta[1]);
 console.log(arrFruta[2]);
 console.log(arrFruta[3]);
 
-let arrWord =word.split("");
+let arrWord = word.split(" ");
 console.log(arrWord);
 console.log(arrWord[0]);
 console.log(arrWord[1]);
@@ -141,3 +142,7 @@ console.log(num1);
 num2 = num.padEnd(4,0);
 console.log(num2);
 
+// Extraindo espaços de uma string com o trim()
+
+wordSemespaco = word.trim();
+console.log(wordSemespaco);

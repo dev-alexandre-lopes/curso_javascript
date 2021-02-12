@@ -139,3 +139,11 @@ let Ola = function(){
 
 console.log (typeof Ola) 
 console.log (Ola());     
+
+/*
+    Operador typeof:
+    Operador pode ser usado para descobrir que tipo de dados uma variável ou operando contém. 
+    Pode ser usado com ou sem parênteses (typeof (x) ou typeof x).
+*/
+console.log(typeof 15);
+console.log(typeof ('hello'));

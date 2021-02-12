@@ -1,4 +1,4 @@
-//JavaScript Variables:
+nod//JavaScript Variables:
 
 /*
 Todas as variáveis ​​JavaScript devem ser identificadas com nomes exclusivos.

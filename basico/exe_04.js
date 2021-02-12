@@ -33,7 +33,7 @@ let priIndice = nomeJunto.indexOf('a')
 
 console.log(priIndice);
 
-document.body.innerHTML += `Qual é o primeiro índice da letra A no seu nome? ${priIndice} <br>`;
+document.body.innerHTML += `Qual é o primeiro índice da letra "a" no seu nome? ${priIndice} <br>`;
 
 let ultIndice = nomeJunto.lastIndexOf('a');
 

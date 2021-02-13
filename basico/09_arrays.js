@@ -169,3 +169,81 @@ let filtro =  arr.filter(function(element){
     return element > 8;
 })
 console.log(filtro); // imprime o array: [9, 9]
+
+// Classificando um Array: Método sort()
+
+let casa = ['porta', 'janela', 'fogão', 'pia', 'panela', 'sofá',]
+
+let apt = casa.sort()
+console.log(casa)
+console.log(apt)//Em ordem alfabética
+
+//Revertendo a ordem dos elementos de um array: Método reverse()
+
+let contagem = ['um', 'dois', 'três', 'quatro', 'cinco']
+
+let inverso = contagem.reverse()
+
+console.log(contagem)
+console.log(inverso)
+
+//Classificando arrays numéricos:
+
+let numbers = [5,20,75,40,100,80,90]
+console.log(numbers)
+let ordem = numbers.sort()
+console.log(ordem)
+
+//Organizando em ordem crescente:
+numbers.sort(function(a,b){
+    return a - b;
+})
+console.log(numbers)
+
+//Encontrando o valor máximo em u array:
+
+function findMax(array){
+    return Math.max.apply(null,array)
+}
+
+function findMin(array){
+    return Math.min.apply(null,array)
+}
+console.log(findMax(numbers))
+console.log(findMin(numbers))
+
+//Classificando um Array de Objetos:
+
+var pessoas = [
+    { name: "Harry", age: 14 },
+    { name: "Ethan", age: 30 },
+    { name: "Peter", age: 21 },
+    { name: "Clark", age: 42 },
+    { name: "Alice", age: 16 }
+];
+
+console.log(pessoas)
+
+//Classificando por idade
+
+pessoas.sort(function(a,b){
+    return a.age - b.age
+})
+console.log(pessoas)
+
+//Classificando por Nome Ordem Alfabética
+
+pessoas.sort(function(a, b) {
+    let x = a.name.toLowerCase(); 
+    let y = b.name.toLowerCase(); 
+    if(x < y) {
+        return -1;
+    }
+    if(x > y) {
+        return 1;
+    }
+    
+    return 0;
+});
+
+console.log(pessoas)

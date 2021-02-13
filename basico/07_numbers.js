@@ -137,10 +137,52 @@ console.log(g.toFixed(2));  // '0.00' (desde que o 1.58e-4 é igual a 0.000158)
 
 //Formatando Números com Precisão: toPrecison()
 
+/*
+Se quiser a forma mais apropriada de um número, você pode usar o método toPrecision(). Este método retorna uma string que 
+representa o número com a precisão especificada.Se a precisão for grande o suficiente para incluir todos os dígitos da parte 
+inteira do número, o número será formatado usando a notação de ponto fixo. Caso contrário, o número é formatado em notação 
+exponencial. O parâmetro de precisão é opcional
+*/
+
+let h = 6.235;
+
+console.log(h.toPrecision());  // '6.235'
+console.log(h.toPrecision(3));  // '6.24' (arredondamento)
+console.log(h.toPrecision(2));  // '6.2'
+console.log(h.toPrecision(1));  // '6'
+
+let i = 47.63;
+console.log(i.toPrecision(2)); // '48' (arredondamento, sem parte fracionária)
+
+let r = 1234.5;
+console.log(r.toPrecision(2));  // '1.2e+3'
 
 
 //Verificando se um número é inteiro:
 
 console.log(Number.isInteger(a)); // Retorna True
-
 console.log(Number.isInteger(e)); // Retorna Falso
+
+//Verificando se um número é NaN:
+
+let temp = 43 * 'olá'
+console.log(Number.isNaN(temp));
+
+//Ajustando problemas de precisão:
+
+let num1 = 0.7;
+let num2 = 0.1;
+
+console.log(num1 + num2);
+
+let num3 = num1 + num2;
+
+// num1 = ((num1 * 100) + (num2 * 100)) / 100; // 0.8
+// num1 = ((num1 * 100) + (num2 * 100)) / 100; // 0.9
+// num1 = ((num1 * 100) + (num2 * 100)) / 100; // 1.0
+
+num1 = Number(num1.toFixed(2));
+
+console.log(num1.toFixed(2));
+console.log(num3.toFixed(2));
+console.log(Number.isInteger(num1));

@@ -68,8 +68,11 @@ function f() {
   
   var j, k;
   [j, k] = f();
-  console.log(j); // 1
-  console.log(k); // 2
+  [,r] = f(); //Ignorando alguns valores retornados
+  console.log(j); // 109
+  console.log(k); // 265
+  console.log(r); // 265
+
 
 
 //Extraindo valores do resultado de uma expressão regular:
@@ -89,7 +92,65 @@ console.log('---------------------------------------------------------------')
 //Desestruturação de Objeto:
 
 let transparent = {r:255, g:189, b:54, a:1.0}; // Uma cor RGBA
-let {r:red, g:green, b:blue} = transparent; // red=0.0,green=0.0,blue=0.0
+let {r:red, g:green, b:blue} = transparent; 
 console.log(red, green, blue);
+
+
+//Objeto aninhado e desestruturação de array:
+const pessoa = {
+  //nome: 'Paulo',
+  sobrenome: 'Martins',
+  idade: '35',
+  endereco:{ 
+    //rua: 'Av Brasil', 
+    numero: '15'},
+}
+console.log(pessoa);
+console.log(pessoa.nome);
+console.log(pessoa.endereco);
+
+//const {nome = 'Carlos',sobrenome} = pessoa;
+//console.log(nome, sobrenome);
+
+const {endereco:{rua:ponto = 'Constantino Nery', numero}} = pessoa;
+console.log(ponto, numero)
+
+//Atribuição para variáveis com novos nomes:
+
+const {nome:n = 'Fred', sobrenome} = pessoa;
+console.log(n, sobrenome);
+
+//Atribuição sem declaração: Precisa estar entre parênteses:
+
+let num4, num5
+({num4,num5} = {num4: 4, num5: 6})
+console.log(num4, num5)
+
+
+//For de iteração e desestruturação:
+var people = [
+  {
+    name: "Mike Smith",
+    family: {
+      mother: "Jane Smith",
+      father: "Harry Smith",
+      sister: "Samantha Smith"
+    },
+    age: 35
+  },
+  {
+    name: "Tom Jones",
+    family: {
+      mother: "Norah Jones",
+      father: "Richard Jones",
+      brother: "Howard Jones"
+    },
+    age: 25
+  }
+];
+
+for (var {name: ni, family: { father: f } } of people) {
+  console.log("Name: " + ni + ", Father: " + f);//Retirando os valores do objeto
+}
 
 

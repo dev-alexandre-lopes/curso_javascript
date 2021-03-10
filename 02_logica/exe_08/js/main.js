@@ -43,7 +43,6 @@ document.addEventListener('click', function (e) {
     }
 
 })
-
 //Função que Cria uma hora a partir dos segundos passados
 function criaHoraSegundos(segundos) {
     let data = new Date(segundos * 1000);

@@ -1,4 +1,4 @@
-nod//JavaScript Variables:
+//JavaScript Variables:
 
 /*
 Todas as variáveis ​​JavaScript devem ser identificadas com nomes exclusivos.
@@ -50,3 +50,5 @@ console.log(nomeCliente);
 console.log($, $$$, $myMoney);
 
 console.log(NomeCliente, _ultimoNome);
+
+console.log(_x,_100);

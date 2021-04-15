@@ -125,6 +125,7 @@ let cores = ["Red", "Yellow", "Green", "Orange"];
 let cidades = ["London", "Paris", "New York"];
  
 console.log (cores[0]);   
+console.log (cores[3]);
 console.log (cidades[2]);  
 
 /*

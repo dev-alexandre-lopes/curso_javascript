@@ -38,7 +38,7 @@ padEnd()     - Método que oferece suporte ao preenchimento no final de uma stri
 
 // Criando uma String
 
-let texto = "Um texto qualquer"; // Criando uma String
+let texto = "Um texto qualquer, de qualquer tamanho"; // Criando uma String
 
 console.log (texto);
 

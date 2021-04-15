@@ -34,7 +34,7 @@ let div = VarA / VarB;
 let pot = VarA ** VarB;
 let rest = VarA % 2;
 let conta = (VarA*VarB)/(VarA-VarB) + 1// Observar a ordem de prioridade
-
+console.log("*************************************************************************");
 // Exibindo os resultados:
 console.log(soma);
 console.log(sub);
@@ -44,7 +44,7 @@ console.log(mul);
 console.log(pot);
 console.log(rest);
 console.log(conta);
-
+console.log("*************************************************************************");
 /* Operadores de Atribuição: 
 
     =	Atribui	
@@ -67,7 +67,7 @@ VarD /= 2;
 console.log(VarD);
 VarC %= 2;
 console.log(VarC);
-
+console.log("*************************************************************************");
 /* Operadores de String:
 
 +	Concatenação
@@ -77,11 +77,11 @@ console.log(VarC);
 let str1 = "Olá";
 let str2 = " Mundo!";
  
-console.log (str1 + str2); 
+console.log (str1 + str2); //Exemplo de concatenção de strings
  
 str1 += str2;
 console.log (str1); 
-
+console.log("*************************************************************************");
 
 /* Operadores de Incremento e Decremento:
 
@@ -109,7 +109,7 @@ console.log (x);   // Outputs: 9
 x = 10;
 console.log (x--); // Outputs: 10
 console.log (x);   // Outputs: 9
-
+console.log("*************************************************************************");
 
 /* Operadores Lógicos:
 
@@ -129,11 +129,11 @@ let ano = 2020;
  
 // Anos Bissextos são divisiveis por 400 ou por 4 mão não por 100
 if((ano % 400 == 0) || ((ano % 100 != 0) && (ano % 4 == 0))){
-    console.log (`${ano} é um ano bissexto.`);
+    console.log (`${ano} é um ano bissexto.`);//Exemplo de uso de Template Strings
 } else{
     console.log (`${ano} não é um ano bissexto.`);
 }
-
+console.log("*************************************************************************");
 /* Operadores de Comparação:
 
     ==	Igual
@@ -158,6 +158,6 @@ console.log (p < y);   // Outputs: true
 console.log (p > y);   // Outputs: false
 console.log (p <= y);  // Outputs: true
 console.log (p >= y);  // Outputs: false
-
+console.log("*************************************************************************");
 
 

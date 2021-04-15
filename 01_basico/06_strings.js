@@ -35,58 +35,48 @@ split()      - Método que pode ser usado para dividir uma string em um array de
 padStart()   - Método que oferece suporte ao preenchimento no início de uma string. 
 padEnd()     - Método que oferece suporte ao preenchimento no final de uma string. 
 */ 
-
+console.log("**********************************************************************************");
 // Criando uma String
-
 let texto = "Um texto qualquer, de qualquer tamanho"; // Criando uma String
-
 console.log (texto);
+console.log("**********************************************************************************");
 
 // Propriedade .length verifica o tamanho da string: 17
-
 let tamanho = texto.length; 
-
-console.log (tamanho);
+console.log (`O texto acima possu ${tamanho} letras`);//Utilizando o conceito de template strings
+console.log("**********************************************************************************");
 
 // Verificando o valor na posição 6: t
-
-console.log(texto[6]);
+console.log(`A letra que está na posição 6 da frase é: ${texto[6]}`);
+console.log("**********************************************************************************");
 
 // Método charAt() identifica o valor de uma posição específica: m
-
 console.log(texto.charAt(1));
 
 // Método charCodeAt() retorna o caractere unicode da string.
-
 console.log(texto.charCodeAt(1));
 
 // Método indexOf retorna a posição da primeira ocorrência de uma string
-
-let pos = texto.indexOf('texto'); 
+let pos = texto.indexOf('de'); 
 console.log (pos);
 
 //Exemplo de lastIndexOf
-
 let text2 = ("Dia de sol quente no mês de janeiro. Todos os dias de sol são bons");
 
 // Método lastIndexOf retorna a posição da ultima ocorrência de um string
-
 let pos1 = text2.lastIndexOf('sol');
 console.log (pos1);
 
 //Forma de concatenar texto usando: Template Strings 
-
 console.log (`${texto} em um lindo sábado`); 
 
 // Pesquisando pou um padrão dentro da string com search(). Não suporta expressões regulares.
-
 let str = "Color red looks brighter than color blue.";
 console.log(str);
 let pos2 = str.search("color");
 console.log(pos2);
 
 //Extraindo uma substring de uma string -> .slice(startIndex, endIndex).
-
 let email = 'Esse é meu e-mail:joao@gmail.com';
 let valorEmail = email.slice(18,32);
 console.log(valorEmail);

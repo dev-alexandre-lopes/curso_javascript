@@ -7,11 +7,8 @@
 */
 
 const apelido = 'Alex'; // String;
-
 const nome = "Paulo"; // String;
-
 console.log (apelido);
-
 console.log (nome);
 
 /*  Number:
@@ -21,25 +18,18 @@ console.log (nome);
 */
 
 const num = 15; // Exemplo de um número inteiro
-
 let num1 = 80.49; // Exemplo de um número real(ponto flutuante)
-
 let num2 = 14.3e+3 // Exemplo de um número exponencial 
-
 let num3 = 10.5e-3 // Exemplo de um número exponencial 
-
 console.log (num, num1, num2, num3);
-
 console.log (typeof num)
+console.log("**********************************************************************************");
 
 // Verificando outros casos de números:
 
 console.log (16 / 0);  // Output: Infinity
-
 console.log (-16 / 0); // Output: -Infinity
-
 console.log (16 / -0); // Output: -Infinity
-
 
 /*
 Enquanto NaN representa um valor especial Not-a-Number (NaN). 
@@ -48,6 +38,7 @@ de -1 ou dividir 0 por 0, etc.
 */
 
 console.log("algum texto"/2); // Saída NaN
+console.log("**********************************************************************************");
 
 /*
     Boolean:
@@ -58,22 +49,18 @@ console.log("algum texto"/2); // Saída NaN
 */
 
 const aprovado = true // Booleano: V ou F
-
 console.log (aprovado);
-
 console.log (typeof aprovado)
-
+console.log("**********************************************************************************");
 /*
     Undefined:  
-
     O tipo de dado undefined só pode ter um valor - o valor especial undefined. Se uma variável 
     foi declarada, mas não foi atribuída um valor, tem o valor undefined.
 */
 
 let Ka;
-
 console.log (typeof Ka);
-
+console.log("**********************************************************************************");
 /*
     Null:
 
@@ -83,39 +70,37 @@ console.log (typeof Ka);
 */
 
 let g = null
-
 console.log(g);
-
+console.log("**********************************************************************************");
 /*
     Object:
     
     O object é um tipo de dado complexo que permite armazenar coleções de dados.
-
     Um object contém propriedades, definidas como um par de valores-chave. 
-    
     Uma chave de propriedade (nome) é sempre uma string, mas o valor pode ser qualquer tipo de dados, 
-    
     como strings, números, booleanos ou tipos de dados complexos como matrizes, funções e outros objetos. 
-    
 */
 
 let vazioObject = {};
-
-let pessoa = {"nome": "Clark", "sobrenome": "Kent", "idade": "36"};
- 
+let pessoa = {nome: "Clark", sobrenome: "Kent", idade: "36"};
 let car = {
-    "modelo": "BMW X3",
-    "cor": "white",
-    "portas": 5
+    modelo: "BMW X3",
+    cor: "white",
+    portas: 5
+}
+let escola = {
+    Professor:"Paulo",
+    Aluno: "João",
+    Diretor: "Carlos",
+    Pedagoga:"Marília"
 }
 console.log(vazioObject);
 console.log(pessoa);
 console.log(car);
-
-
+console.log(escola);
+console.log("**********************************************************************************");
 /*
     Array:
-    
     Um array é um tipo de objeto usado para armazenar vários valores em uma única variável. 
     Cada valor (também chamado de elemento) em um array tem uma posição numérica, conhecida 
     como seu índice, e pode conter dados de qualquer tipo - números, strings, booleanos, funções, objetos e até mesmo outras array. 
@@ -127,7 +112,7 @@ let cidades = ["London", "Paris", "New York"];
 console.log (cores[0]);   
 console.log (cores[3]);
 console.log (cidades[2]);  
-
+console.log("**********************************************************************************");
 /*
     Function:
     A function é um objeto que podemos chamar para que executar um bloco de código. 
@@ -137,10 +122,9 @@ console.log (cidades[2]);
 let Ola = function(){ 
     return "Olá Mundo!"; 
 }
-
 console.log (typeof Ola) 
 console.log (Ola());     
-
+console.log("**********************************************************************************");
 /*
     Operador typeof:
     Operador pode ser usado para descobrir que tipo de dados uma variável ou operando contém. 
@@ -148,3 +132,6 @@ console.log (Ola());
 */
 console.log(typeof 15);
 console.log(typeof ('hello'));
+console.log(typeof(true));
+console.log(typeof(null));
+console.log("**********************************************************************************");

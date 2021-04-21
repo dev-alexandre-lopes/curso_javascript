@@ -54,11 +54,8 @@ function quartaFuncao(a, b = 2, c = 4){
     console.log(a + b + c);
 }
 quartaFuncao(1, 8, 3);// Passando argumentos diferentes dos parâmetros. Observe que será operado os valores dos argumentos e naõ dos parâmetros.
-
 quartaFuncao(1);// Passando menos argumentos, desta forma utiliza-se os valores já definidos nos parâmetros;
-
 quartaFuncao(5, undefined, 5);// Passando somente alguns valores de argumentos e usando os valores já definidos nos parâmetros. Valor de b = 2
-
 console.log("***************************************************************************************")
 
 //Exemplo de uma passagem de argumentos via objeto para uma função através de desestruturação
@@ -80,5 +77,18 @@ function sextaFuncao ([valor1, valor2, valor3]){
 let obj2 = [1, 3, 4];// Passando array por variável;
 sextaFuncao([3, 6, 9]);
 sextaFuncao(obj2);
+sextaFuncao(['Paulo', 'Souza', 30]);
 
 console.log("***************************************************************************************")
+//Exemplo de Rest operator (...)
+function conta (operador, acumulador, ...numeros){
+    if (operador === '+') acumulador = numeros[0] + numeros[1];
+    if (operador === '-') acumulador = numeros[0] - numeros[1];
+    if (operador === '/') acumulador = numeros[0] / numeros[1];
+    if (operador === '*') acumulador = numeros[0] * numeros[1];
+    console.log(acumulador);
+}
+conta('+', 1, 2, 3);
+conta('-', 0, 20, 10);
+conta('*', 1, 4, 5);
+conta('/', 1, 50, 5);
